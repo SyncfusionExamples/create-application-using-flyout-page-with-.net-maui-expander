@@ -2,7 +2,8 @@
 <FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExpanderMaui.Views.ExpanderFlyoutPage"
-             xmlns:pages="clr-namespace:ExpanderMaui.Views" FlyoutLayoutBehavior="Default" Padding="0,40,0,0">
+             xmlns:pages="clr-namespace:ExpanderMaui.Views" 
+            FlyoutLayoutBehavior="Default">
     <FlyoutPage.Flyout>
         <pages:ExpanderFlyoutMaster/>
     </FlyoutPage.Flyout>
