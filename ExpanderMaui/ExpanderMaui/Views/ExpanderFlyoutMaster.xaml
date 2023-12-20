@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpanderMaui.Views.ExpanderFlyoutMaster"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Expander;assembly=Syncfusion.Maui.Expander"
+             Title="Menu">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid BackgroundColor="#f54291" HeightRequest="150" Padding="20" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="userimage.png" HeightRequest="70" WidthRequest="70" Margin="10,10,10,10"/>
+            <Label Text="John" Grid.Column="1" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Start" Padding="20"/>
+        </Grid>
+        <ScrollView BackgroundColor="#EDF2F5" VerticalScrollBarVisibility="Always" Grid.Row="1">
+            <StackLayout>
+                <syncfusion:SfExpander HeaderIconPosition="End">
+                    <syncfusion:SfExpander.Header>
+                        <Grid HeightRequest="50">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="home.png" HeightRequest="25" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="Home" Grid.Column="1" TextColor="#495F6E" VerticalTextAlignment="Center" />
+                        </Grid>
+                    </syncfusion:SfExpander.Header>
+
+                    <syncfusion:SfExpander.Content>
+                        <StackLayout Padding="10,10,10,10" BackgroundColor="#FFFFFF">
+                            <Label HeightRequest="50" Text="Tasks" TextColor="#303030" VerticalTextAlignment="Center" />
+                            <Label HeightRequest="50" Text="Settings" TextColor="#303030" VerticalTextAlignment="Center" />
+                        </StackLayout>
+                    </syncfusion:SfExpander.Content>
+                </syncfusion:SfExpander>
+
+                <syncfusion:SfExpander HeaderIconPosition="End">
+                    <syncfusion:SfExpander.Header>
+                        <Grid HeightRequest="50">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="user.png" HeightRequest="25" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="Profile" Grid.Column="1" TextColor="#495F6E" VerticalTextAlignment="Center" />
+                        </Grid>
+                    </syncfusion:SfExpander.Header>
+
+                    <syncfusion:SfExpander.Content>
+                        <StackLayout Padding="10,10,10,10" BackgroundColor="#FFFFFF">
+                            <Label Text="Overview" TextColor="#303030" HeightRequest="50"/>
+                            <Label Text="Performance" TextColor="#303030" HeightRequest="50"/>
+                            <Label Text="Accounts" TextColor="#303030" HeightRequest="50"/>
+                        </StackLayout>
+                    </syncfusion:SfExpander.Content>
+                </syncfusion:SfExpander>
+
+                <syncfusion:SfExpander HeaderIconPosition="End">
+                    <syncfusion:SfExpander.Header>
+                        <Grid HeightRequest="50">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="achievements.png" HeightRequest="25" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="Achievements" Grid.Column="1" TextColor="#495F6E" VerticalTextAlignment="Center" />
+                        </Grid>
+                    </syncfusion:SfExpander.Header>
+
+                    <syncfusion:SfExpander.Content>
+                        <StackLayout Padding="10,10,10,10" BackgroundColor="#FFFFFF">
+                            <Label Text="Leaderboard" TextColor="#303030" HeightRequest="50"/>
+                            <Label Text="Activity" TextColor="#303030" HeightRequest="50" />
+                            <Label Text="Badges" TextColor="#303030" HeightRequest="50"/>
+                        </StackLayout>
+                    </syncfusion:SfExpander.Content>
+                </syncfusion:SfExpander>
+                <syncfusion:SfExpander HeaderIconPosition="End">
+                    <syncfusion:SfExpander.Header>
+                        <Grid HeightRequest="50">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="logout.png" HeightRequest="25" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="Exit" Grid.Column="1" TextColor="#495F6E" VerticalTextAlignment="Center" />
+                        </Grid>
+                    </syncfusion:SfExpander.Header>
+
+                    <syncfusion:SfExpander.Content>
+                        <StackLayout Padding="10,10,10,10" BackgroundColor="#FFFFFF">
+                            <Label Text="Logout" TextColor="#303030" HeightRequest="50"/>
+                            <Label Text="Close" TextColor="#303030" HeightRequest="50"/>
+                        </StackLayout>
+                    </syncfusion:SfExpander.Content>
+                </syncfusion:SfExpander>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
